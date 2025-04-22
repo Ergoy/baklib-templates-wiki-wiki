@@ -15,7 +15,8 @@
   class="group page-tree--node"
 >
   <div class="flex space-x-1">
-    <div style="width: calc({{ depth * 26 }}px)" class="flex justify-center"></div>
+    {% assign width = depth | times: 26 %}
+    <div style="width: calc({{ width }}px)" class="flex justify-center"></div>
 
     <div class="flex-0 flex items-center ">
       {% if children_size > 0 %}
