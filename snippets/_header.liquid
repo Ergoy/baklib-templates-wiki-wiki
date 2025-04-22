@@ -7,7 +7,7 @@
     x-data="{ search_show: false, search_button_show: false }"
     x-init="search_button_show = (window.location.pathname !== '/')"
   >
-    <div class="mx-auto {{ screen_width }} px-4 sm:px-6">
+    <div class="mx-auto {{ screen_width }} px-4 sm:px-6 relative">
       <div class="flex items-center justify-between h-12 md:h-16">
         <!-- Site branding -->
         <div class="grow">
@@ -95,12 +95,12 @@
       </div>
       {% # 搜索栏 %}
       <div
-        class="w-full relative"
+        class="w-full"
         x-show="search_show"
         x-cloak
         @click.outside="search_show=false; search_button_show=true"
       >
-        {% form_tag 'search', class: 'w-11/12 md:w-1/2 md:relative absolute z-20 left-1/2 -translate-x-1/2' %}
+        {% form_tag 'search', class: 'w-11/12 md:w-1/2 md:relative top-3 absolute z-20 left-1/2 -translate-x-1/2' %}
         <div class="ml-4 grow md:ml-8">
           <label class="relative flex">
             <input
