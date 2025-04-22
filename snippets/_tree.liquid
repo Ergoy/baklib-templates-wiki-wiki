@@ -16,7 +16,7 @@
 >
   <div class="flex space-x-1">
     {% assign width = depth | times: 26 %}
-    <div style="width: calc({{ width }}px)" class="flex justify-center"></div>
+    <div style="width: {{ width }}px;" class="flex justify-center"></div>
 
     <div class="flex-0 flex items-center ">
       {% if children_size > 0 %}
