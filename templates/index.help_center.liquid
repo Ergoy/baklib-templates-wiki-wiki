@@ -25,7 +25,7 @@
       <div class="container flex flex-col h-full px-4 mx-auto">
         <div class="flex flex-col items-center justify-center flex-grow">
           <h1 class="py-2 mt-12 text-2xl md:text-4xl font-bold text-white transition duration-500 md:mt-0 text-shadow">
-            {{ site.name }}
+            &nbsp;
           </h1>
           <p class="py-2 text-base text-white transition duration-500 text-shadow">{{ page.settings.description }}</p>
 
@@ -176,7 +176,7 @@
                       <div class="flex items-center justify-start">
                         {% if site.settings.show_card_icon %}
                           {% if card_page.settings.icon %}
-                            <span class="mr-2"><img src="{{ card_page.settings.icon | default: default_icon }}" class="h-8"/> </span>
+                            <span class="mr-2"><img src="{{ card_page.settings.icon | default: default_icon }}" class="h-10"/> </span>
                           {% else %}
                             <span class="mr-2">
                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 w-8 h-8 text-primary">
