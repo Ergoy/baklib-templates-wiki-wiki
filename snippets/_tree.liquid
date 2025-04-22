@@ -15,9 +15,9 @@
   class="group page-tree--node"
 >
   <div class="flex space-x-1">
-    <div style="width: calc(26px * {{ depth }})" class="flex justify-center"></div>
+    <div style="width: calc({{ depth * 26 }}px)" class="flex justify-center"></div>
 
-    <div class="flex items-center ">
+    <div class="flex-0 flex items-center ">
       {% if children_size > 0 %}
         <div @click="expanded = !expanded" class="flex items-center justify-center cursor-pointer">
           <svg t="1698224111506"
